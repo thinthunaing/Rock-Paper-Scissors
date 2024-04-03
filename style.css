@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+
+/* parent */
+
+.wrapper{
+    background: radial-gradient( hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    overflow: auto;
+}
+
+h1{
+    color: white;
+}
+
+/* score */
+
+.score-container{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 696px;
+    height: 146px;
+    margin-top: 6%;
+    padding: 22px 29px;
+   
+}
+
+.title{
+    flex: 1;
+}
+
+.score{
+    width: 133px;
+    height: 109px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 46px;
+    border-radius: 10px;
+}
+
+.score p{
+    color: hsl(229, 64%, 46%);
+    font-size: 16px;
+}
+
+.score h1{
+    font-size: 50px;
+    font-weight: 700;
+    outline: hsl(217, 16%, 45%);
+    color: hsl(229, 25%, 31%);
+}
+
+
+/* play section */
+.hands{
+    background-image: url(images/bg-triangle.svg);
+    background-repeat: no-repeat;
+   background-position: center;
+    display: flex;
+    margin-top: 100px;
+    width: 476px;
+    height: 436px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hands img{
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.hands .paper{
+    margin-right: 32px;
+}
+
+.hands .scissors{
+    margin-left: 32px;
+}
+
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.hands .hand:hover{
+    transform: translate3d(0px, -8px, 0px);
+}
+
+/* result session */
+.content{
+    width: 965px;
+    display: none;
+    margin-top: 60px;
+   margin: auto;
+   
+}
+
+.content > div{
+    flex: 1;
+    /* margin-left: 55px; */
+}
+
+.user , .com {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.com h1,.user h1{
+    margin-bottom: 60px;
+    font-size: 27px;
+    font-weight: 700;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1{
+    margin-bottom: 27px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.info button{
+    padding: 12px 50px;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    letter-spacing: 2px;
+    word-spacing: -1px;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(217, 16%, 45%);
+}
+
+@media (max-width: 575.98px) {
+
+    .score-container{
+        width: 360px;
+        height: 146px;
+        margin-top: 6%;
+        padding: 22px 29px;
+       
+    }
+    
+    .title img{
+        width: 150px;
+        height: 100px;
+    }
+    .score{
+        width: 100px;
+    }
+    
+    .hands{
+        background-image: url(images/bg-triangle.svg);
+        background-repeat: no-repeat;
+       background-position: center;
+        display: flex;
+        margin-top: 100px;
+        width: 326px;
+        height: 307px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+   .hands img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .hands .paper{
+        margin-right: 92px;
+        margin-top: -3px;
+    }
+
+    .hands .rock{
+        margin-top: 80px;
+    }
+    
+    .content{
+        max-width: 326px;
+        height: 307px; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .user , .com {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .com h1,.user h1{
+        margin-bottom: 40px;
+        font-size: 10px;
+        font-weight: 700;
+        
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info h1{
+        font-size: 20px;
+    }
+    
+    .info button{
+        padding: 10px 12px;
+        font-size: 10px;
+        
+    }
+    
+}

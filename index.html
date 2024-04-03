@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+ 
+  <!-- Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="score-container">
+      <div class="title">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="score">
+        <p>SCORE</p>
+        <h1 id="score">0</h1>
+      </div>
+    </div>
+    <div class="hands">
+      <div class="hand paper" onclick='pickHand("Paper")'>
+        <img  src="images/Paper.png" alt="">
+      </div>
+      <div class="hand scissors"  onclick="pickHand('Scissors')">
+        <img  src="images/Scissors.png" alt="">
+      </div>
+      <div class="hand rock" onclick="pickHand('Rock')">
+        <img  src="images/Rock.png" alt="">
+      </div>
+    </div>
+    <div class="content">
+      <div class="user">
+        <h1>YOU PICKED</h1>
+        <img id="userPick" src="images/Paper.png" alt="">
+      </div>
+      <div class="info">
+        <h1 id="winner">YOU WIN</h1>
+        <button onclick="again()">PLAY AGAIN</button>
+      </div>
+      <div class="com">
+        <h1>THE HOUSE PICKED</h1>
+        <img id="comPick" src="images/Paper.png" alt="">
+      </div>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
